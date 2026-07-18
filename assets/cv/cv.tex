@@ -1,0 +1,91 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=1in, top=0.75in, bottom=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{parskip}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  linkcolor=black
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Helper command: entry with right-aligned date
+\newcommand{\cventry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \textbf{#2}
+  \end{tabularx}
+  \vspace{1pt}
+  #3
+  \vspace{2pt}
+  #4
+  \vspace{6pt}
+}
+
+\begin{document}
+
+% ── Header ──────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE \textbf{Mingcheng Zhang}} \\[6pt]
+  Department of Applied Finance, Macquarie University \\[3pt]
+  \href{mailto:mingcheng.zhang@mq.edu.au}{mingcheng.zhang@mq.edu.au}
+\end{center}
+
+\vspace{4pt}
+
+% ── Education ───────────────────────────────────────────────────────────────
+\section{Education}
+
+\cventry{Macquarie University}{01/2025 -- 02/2026}{%
+  Master of Research
+}{%
+  \begin{itemize}[leftmargin=1.5em, itemsep=1pt, topsep=1pt]
+    \item \textbf{GPA:} HD (94/100)
+  \end{itemize}
+}
+
+\cventry{Liaoning University}{09/2022 -- 07/2024}{%
+  Master of Finance
+}{%
+  \begin{itemize}[leftmargin=1.5em, itemsep=1pt, topsep=1pt]
+    \item \textbf{GPA:} 3.55/4
+  \end{itemize}
+}
+
+\cventry{Bohai University}{09/2018 -- 06/2022}{%
+  Bachelor of Economics
+}{%
+  \begin{itemize}[leftmargin=1.5em, itemsep=1pt, topsep=1pt]
+    \item \textbf{GPA:} 3.08/4
+  \end{itemize}
+}
+
+% ── Employment ──────────────────────────────────────────────────────────────
+\section{Employment}
+
+\cventry{Macquarie University}{10/2025 -- Present}{%
+  Research Assistant
+}{}
+
+% ── Publication ─────────────────────────────────────────────────────────────
+\section{Publication}
+
+Bu, D., Liao, Y., \& Zhang, M. Fueling the Mind: How Local Gasoline Prices Shape
+Household Consumption. \textit{Journal of Economic Behavior \& Organization}, 248, 107678.
+\href{https://doi.org/10.1016/j.jebo.2026.107678}{https://doi.org/10.1016/j.jebo.2026.107678}
+
+\end{document}
